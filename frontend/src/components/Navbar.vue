@@ -1,21 +1,33 @@
 <template>
   <div>
-    <v-app-bar
-      color="gray accent-4"
-      dense
-      dark
-    >
-      <v-toolbar-title class="myFont">My Darkest Day</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-account-card-outline</v-icon>
-      </v-btn>
+    <v-navigation-drawer permanent v-if="drawer" v-model="drawer" app color="gray" dark>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="text-h6">
+            Navigation
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    
+      <v-divider></v-divider>
+    
+      <v-list dense nav>
+        <v-list-item v-for="item in items" :key="item.title" link>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+    
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    
+    <v-app-bar app color="gray accent-4" dense dark>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    
+      <v-toolbar-title class="title">My Darkest Day</v-toolbar-title>
     </v-app-bar>
   </div>
 </template>
@@ -24,18 +36,21 @@
 export default {
   name: 'Navbar',
 
-  methods: {
-    redirectToUrl(url) {
-      window.location = url;
-    },  
-  }
+  data: () => ({
+    drawer: null,
+    items: [
+      { title: 'Home', icon: 'mdi-view-dashboard' },
+      { title: 'Projects', icon: 'mdi-application' },
+      { title: 'About', icon: 'mdi-help-box' },
+    ],
+  }),
 }
 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.myFont {
-  font-family: 'Mansalva', cursive;
-}
+  .title {
+    font-family: 'Mansalva', cursive;
+  }
 </style>

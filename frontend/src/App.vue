@@ -1,15 +1,14 @@
 <template>
   <v-app>
-    <Navbar></Navbar>
+    <Navbar/>
     <v-main>
-      <About/>
-      <ProjectCard/>
+      <About />
+      <ProjectCard />
     </v-main>
   </v-app>
 </template>
 
 <script>
-
 import Navbar from './components/Navbar';
 import About from './components/About';
 import ProjectCard from './components/ProjectCards.vue';
@@ -24,7 +23,12 @@ export default {
 },
 
   data: () => ({
-    //
+    drawer: null,
+    items: [
+      { title: 'Home', icon: 'mdi-view-dashboard' },
+      { title: 'Projects', icon: 'mdi-application' },
+      { title: 'About', icon: 'mdi-help-box' },
+    ],
   }),
 };
 </script>
