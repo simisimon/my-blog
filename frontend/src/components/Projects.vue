@@ -18,12 +18,9 @@
 import jsonData from '../projects.json';
 export default {
 
-    data () {
-        return {
-            projectData: jsonData
-        }
-    }
-
+    data: () => ({
+        projectData: jsonData
+    }),
 }
 </script>
 
