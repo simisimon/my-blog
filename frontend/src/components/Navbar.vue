@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-navigation-drawer permanent v-if="drawer" v-model="drawer" app color="gray" dark>
+    <v-navigation-drawer permanent v-if="drawer" v-model="drawer" app>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
-            Navigation
+            My Darkest Day
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
@@ -24,10 +24,16 @@
       </v-list>
     </v-navigation-drawer>
     
-    <v-app-bar app color="gray accent-4" dense dark>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-    
-      <v-toolbar-title class="title">My Darkest Day</v-toolbar-title>
+    <v-app-bar 
+      app 
+      shrink-on-scroll 
+      src="moon_header.jpg"
+      prominent
+    >
+      <v-app-bar-nav-icon @click="drawer = !drawer" color="white"></v-app-bar-nav-icon>
+
+      <v-spacer></v-spacer>
+
     </v-app-bar>
   </div>
 </template>
@@ -41,7 +47,7 @@ export default {
     items: [
       { title: 'Home', icon: 'mdi-view-dashboard' },
       { title: 'Projects', icon: 'mdi-application' },
-      { title: 'About', icon: 'mdi-help-box' },
+      { title: 'About', icon: 'mdi-account' },
     ],
   }),
 }
@@ -52,5 +58,6 @@ export default {
 <style scoped>
   .title {
     font-family: 'Mansalva', cursive;
+    color: white;
   }
 </style>
