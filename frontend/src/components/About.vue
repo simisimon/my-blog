@@ -30,26 +30,39 @@
             <div class="second">
                 <div class="about">
                     <h1 style="text-align: center; margin-bottom: 15px;">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, voluptate officiis.
-                        Mollitia dolorum perferendis iusto aliquid distinctio at quibusdam dicta,
-                        necessitatibus maxime ipsam doloremque aspernatur! Distinctio officiis quis dicta. Asperiores!
+                    <p>
+                    I'm a Ph.D. student and a research assistant at the Chair of Software Systems at Leipzig University.
+                    My research interests include configurable software systems, configuration dependencies, and the configuration of machine learning projects and experiments. 
+                    Specifically, I'm interested in taming configuration problems caused by the large number of different technologies incorporated in todays software development.
+                    I received my B.Sc. in 2018 and M.Sc. in 2020 from the Otto-von-Guericke University of Magdeburg.
                     </p>
                 </div>
                 <div class="technology-stack">
                     <h2>Technology Stack</h2>
-                    <div class="logo">
-                        <img src="../assets/python.svg" alt="">
-                        <img src="../assets/javascript.svg" alt="">
-                        <img src="../assets/vuedotjs.svg" alt="">
-                        <img src="../assets/spring.svg" alt="">
+                    <div class="languages">
+                        <h3>Programming Languages</h3>
+                        <div class="logo">
+                            <img src="../assets/technologies/python.svg" alt="">
+                            <img src="../assets/technologies/javascript.svg" alt="">
+                            <img src="../assets/technologies/csharp.svg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="projects">
-                    <div class="project-button">
-                        <a href="https://github.com/simisimon/RepoMiner">RepoMiner</a>
+                    <div class="frameworks">
+                        <h3>Frameworks</h3>
+                        <div class="logo">
+                            <img src="../assets/technologies/vuedotjs.svg" alt="">
+                            <img src="../assets/technologies/spring.svg" alt="">
+                            <img src="../assets/technologies/springboot.svg" alt="">
+                        </div>
                     </div>
-                    <div class="project-button">
-                        <a href="">Test</a>
+                    <div class="others">
+                        <h3>Others</h3>
+                        <div class="logo">
+                            <img src="../assets/technologies/latex.svg" alt="">
+                            <img src="../assets/technologies/microsoftpowerpoint.svg" alt="">
+                            <img src="../assets/technologies/microsoftexcel.svg" alt="">
+                            <img src="../assets/technologies/unity.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,11 +76,13 @@ export default {
     name: 'About',
 }
 
+
+
 </script>
 
 <style scoped>
 .wrapper {
-        padding: 20px;
+        padding: 10px;
         display: flex;
         justify-content: center;
     }
@@ -76,34 +91,32 @@ export default {
         display: flex;
         flex-direction: row;
         border-radius: 25px;
-        background-color: aquamarine;
         border-radius: 25px;
         width: 60%;
         
     }
 
     .first {
-        background-color: lightcoral;
-        padding: 2.5%;
+        padding: 5px;
         width: 20%;
         border-radius: 25px;
-
     }
 
     .second {
-        background-color: lightgray;
-        padding: 2.5%;
+        padding: 1.5%;
         width: 80%;
         border-radius: 25px;
     }
 
     .profile {
         text-align: center;
+        padding: 10px;
     }
 
     .profile img {
-        height: 5rem;
-        border-radius: 50%;
+        height: 15rem;
+        border-radius: 25%;
+        padding: 5px;
     }
 
     .social-links {
@@ -133,7 +146,17 @@ export default {
         padding: 10px;
     }
 
+    .logo {
+        margin: 5px;
+    }
+
     .logo img {
+        height: 2rem;
+        margin: 7.5px;
+        margin-top: 15px;
+    }
+
+    .logo v-img {
         height: 2rem;
         margin: 7.5px;
         margin-top: 15px;
@@ -168,4 +191,7 @@ export default {
         
     }
 
+    .languages {
+        margin-top: 10px;
+    }
 </style>
