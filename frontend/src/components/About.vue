@@ -42,26 +42,26 @@
                     <div class="languages">
                         <h3>Programming Languages</h3>
                         <div class="logo">
-                            <img src="../assets/technologies/python.svg" alt="">
-                            <img src="../assets/technologies/javascript.svg" alt="">
-                            <img src="../assets/technologies/csharp.svg" alt="">
+                            <img src="../assets/technologies/python.svg" alt="" title="Python">
+                            <img src="../assets/technologies/javascript.svg" alt="" title="JavaScript">
+                            <img src="../assets/technologies/csharp.svg" alt="" title="C#">
                         </div>
                     </div>
                     <div class="frameworks">
                         <h3>Frameworks</h3>
                         <div class="logo">
-                            <img src="../assets/technologies/vuedotjs.svg" alt="">
-                            <img src="../assets/technologies/spring.svg" alt="">
-                            <img src="../assets/technologies/springboot.svg" alt="">
+                            <img src="../assets/technologies/vuedotjs.svg" alt="" title="Vue.js">
+                            <img src="../assets/technologies/spring.svg" alt="" title="Spring">
+                            <img src="../assets/technologies/springboot.svg" alt="" title="Spring Boot">
                         </div>
                     </div>
                     <div class="others">
                         <h3>Others</h3>
                         <div class="logo">
-                            <img src="../assets/technologies/latex.svg" alt="">
-                            <img src="../assets/technologies/microsoftpowerpoint.svg" alt="">
-                            <img src="../assets/technologies/microsoftexcel.svg" alt="">
-                            <img src="../assets/technologies/unity.svg" alt="">
+                            <img src="../assets/technologies/latex.svg" alt="" title="Latex">
+                            <img src="../assets/technologies/microsoftpowerpoint.svg" alt="" title="MS Powerpoint">
+                            <img src="../assets/technologies/microsoftexcel.svg" alt="" title="MS Excel">
+                            <img src="../assets/technologies/unity.svg" alt="" title="Unity">
                         </div>
                     </div>
                 </div>
