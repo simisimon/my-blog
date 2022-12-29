@@ -53,6 +53,10 @@
                             <img src="../assets/technologies/vuedotjs.svg" alt="" title="Vue.js">
                             <img src="../assets/technologies/spring.svg" alt="" title="Spring">
                             <img src="../assets/technologies/springboot.svg" alt="" title="Spring Boot">
+                            <img src="../assets/technologies/docker.svg" alt="" title="Docker">
+                            <img src="../assets/technologies/git.svg" alt="" title="Git">
+                            <img src="../assets/technologies/github.svg" alt="" title="GitHub">
+                            <img src="../assets/technologies/gitlab.svg" alt="" title="GitLab">
                         </div>
                     </div>
                     <div class="others">
