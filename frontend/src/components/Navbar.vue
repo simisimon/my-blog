@@ -1,14 +1,7 @@
 <template>
   <div>
     <v-navigation-drawer permanent v-if="drawer" v-model="drawer" app>
-      <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="text-h6">
-            My Darkest Day
-          </v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    
+
       <v-divider></v-divider>
     
       <v-list dense nav>
@@ -25,12 +18,12 @@
     </v-navigation-drawer>
     
     <v-app-bar 
-      app 
-      shrink-on-scroll 
+      app
       src="moon_header.jpg"
-      prominent
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" color="white"></v-app-bar-nav-icon>
+
+      <v-toolbar-title class="title">My Darkest Day</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -56,8 +49,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .title {
+.title {
     font-family: 'Mansalva', cursive;
     color: white;
   }
+
 </style>
